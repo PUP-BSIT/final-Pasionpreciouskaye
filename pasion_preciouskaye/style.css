@@ -1,0 +1,206 @@
+body {
+  background-image: url("https://i.pinimg.com/236x/85/18/af/8518afcfc0fb5f08d6e4bce44a000b81.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  list-style-position: inside;
+  display: grid;
+  min-height: 100vh;
+  font-family: serif;
+  margin: 1px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+countries-list {
+  display: inline-block; 
+  margin: 10px; 
+  text-align: center;
+  }
+  
+  .country-img {
+    width: 50px;
+  }
+
+.position {
+  flex-direction: column;
+  margin: auto;
+}
+  
+.name {
+  text-align: center;
+  background-color: rgb(124, 148, 222);
+  padding: 5px;
+}
+
+h2 {
+  font-style: Italic;
+  display: grid;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 10px;
+  background-color: rgb(35, 104, 223);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#countryDetails {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#countryDetails img {
+  display: block;
+  margin: 10px 0;
+}
+
+#sameRegionCountries {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#sameRegionCountries h2 {
+  margin-bottom: 10px;
+}
+
+#sameRegionCountries div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#sameRegionCountries div > div {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.works,
+.hobbies,
+.comment,
+.goals,
+.your-comment,
+.my-comment,
+.thoughts {
+  border: 10px solid rgba(51, 113, 227, 0.686);
+  background-color: rgba(0, 174, 255, 0.586);
+  width: 350px;
+  gap: 7px;
+  margin: 10px auto;
+  padding: 7px;
+}
+
+.your-comment {
+  background-color: rgb(124, 201, 231);
+  margin: auto;
+  padding: 30px;
+}
+
+.goals {
+  background-color: rgb(124, 201, 231);
+  margin: auto;
+  padding: 30px;
+}
+
+.thoughts {
+  background-color: rgb(124, 201, 231);
+  margin: auto;
+  padding: 30px;
+}
+
+.my-comment{
+  background-color: rgba(127, 236, 255, 0.802);
+  margin: auto;
+  padding: 30px;
+}
+
+.images {
+  background: rgb(159, 221, 242);
+  text-align: center;
+}
+
+.image-item {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+img {
+  height: auto; 
+  max-width: 100px; 
+  margin: 5px; 
+}
+
+.email,
+.fullname,
+.age,
+.subject,
+.sendcopy {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.container {
+  background-color: rgb(58, 234, 228);
+  margin: auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.email {
+  grid-area: email;
+}
+
+.fullname {
+  grid-area: fullname;
+}
+
+.age {
+  grid-area: age;
+}
+
+.subject {
+  grid-area: subject;
+}
+
+.sendcopy {
+  grid-area: sendcopy;
+}
+
+.message {
+  grid-area: message;
+}
+
+.submit {
+  grid-area: submit;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (min-width: 426px) {
+  .container > form {
+    display: grid;
+    grid-template-areas:
+      "email fullname"
+      "age subject"
+      "sendcopy sendcopy"
+      "message message"
+      "submit submit";
+    grid-gap: 10px;
+  }
+}                      
